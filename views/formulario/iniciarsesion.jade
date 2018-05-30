@@ -1,0 +1,23 @@
+extends ../layout.jade
+block contenido
+	div(class="col-md-4 col-sm-5 col-xs-6 borde negrofondo colorborde borderedondo center-block text-center quitarfloat espacioarriba fondo")
+		div()
+			h3(class="rojoclaro") Inicio de sesion
+
+		div(style=" color: #FFFFFF ")
+			form(method="post" action="/cliente/index" style="margin-top:1.5em")
+				div(class="form-group text")
+					label Usuario:   
+					input(id="usuarioTf" type="text" name="usuario" placeholder="Usuario" class="form-control" onkeydown="hi" ) 
+				br
+				div(class="form-group text")
+					label Contraseña :   
+					input(type="password" name="contrasena" placeholder="Contraseña" class="form-control" ) 
+				div(class="form-group text-right")
+					input(type="submit" class="btn " value="Acceder" )
+				br
+	div(class="col-md-4 col-sm-5 col-xs-6 center-block text-center quitarfloat espacioarriba2 ")
+		nav
+			a(class="col-md-6 col-xs-10 grisclaro borde borderedondo center-block" href="/") Inicio
+			a(class="col-md-6 col-xs-10 grisclaro borde borderedondo center-block" href="/formulario/registro") Registro
+	
